@@ -7,7 +7,7 @@ import generateSPMetaData from './samlXmls/sp_metadata'
 
 const appId = process.env.APP_ID || 'parseServerId'
 const masterKey = process.env.MASTER_KEY || 'parseServerId'
-const serverURL = process.env.SERVER_URL_BACKEND || '127.0.0.1'
+const serverURL = process.env.SERVER_URL || '127.0.0.1'
 
 const loginCallbackUrl = process.env.LOGIN_CALLBACK_URL || ''
 const logoutCallbackUrl = process.env.LOGOUT_CALLBACK_URL || ''

@@ -1,7 +1,7 @@
 version: '3.4'
 
 services:
-  studygraph:
+  saml-sp:
     build: .
     # image: step4/studygraph:dev
     ports:
