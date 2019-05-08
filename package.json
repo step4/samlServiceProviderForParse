@@ -1,0 +1,31 @@
+{
+  "name": "saml-service-provider-for-parse",
+  "version": "1.0.0",
+  "description": "sspfp",
+  "repository": "https://github.com/step4/samlServiceProviderForParse.git",
+  "author": "step4 <c.rausch020@gmail.com>",
+  "license": "",
+  "private": true,
+  "engines": {
+    "node": ">=8.12.0"
+  },
+  "scripts": {
+    "start": "npm run build && npm run serve",
+    "serve": "node -r build/main.js",
+    "build": "backpack build",
+    "dev": "backpack dev",
+    "dev:debug": "backpack dev --inspect"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.19.0",
+    "consola": "^2.6.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "parse": "^2.4.0",
+    "samlify": "^2.4.1"
+  },
+  "devDependencies": {
+    "backpack-core": "^0.8.3"
+  }
+}

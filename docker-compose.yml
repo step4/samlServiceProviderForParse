@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  studygraph:
+    build: .
+    # image: step4/studygraph:dev
+    ports:
+      - 8081:8080
+    environment:
+      - PORT=8080
+      - HOST=localhost
+
+      - APP_ID=hochschulQuiz
+      - MASTER_KEY=hochschulQuizMasterKey
+      - SERVER_URL=http://parse-quiz:8080/api
+
+      - LOGIN_CALLBACK_URL=http://localhost:8081/auth/login/callback
+      - LOGOUT_CALLBACK_URL=http://localhost:8081/auth/logout/callback
