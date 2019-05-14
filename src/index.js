@@ -17,10 +17,6 @@ app.use(bodyParser.json())
 async function start() {
   app.use('/auth', authRouter)
 
-  app.get('/auth/success', function(req, res) {
-    res.send('')
-  })
-
   http.createServer(app).listen(port)
 
   consola.ready({

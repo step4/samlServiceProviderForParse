@@ -58,6 +58,10 @@ router.post(`/login/callback`, async (req, res, next) => {
   }
 })
 
+app.get('/success', function(req, res) {
+  res.send('')
+})
+
 router.post(`/logout`, async (req, res) => {
   let userNameID = req
   const { id, context } = sp.createLogoutRequest(idp, 'redirect', { logoutNameID: 'auth0|5c1ebc787b1c3e437a234bc6' })
