@@ -50,7 +50,7 @@ router.post(`/login/callback`, async (req, res, next) => {
         httpOnly: false,
         secure: false
       })
-      res.redirect('/racmt4/auth')
+      res.redirect('/racmt4/auth/success')
     }
   } catch (error) {
     next(error)

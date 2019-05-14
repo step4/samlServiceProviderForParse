@@ -17,7 +17,7 @@ app.use(bodyParser.json())
 async function start() {
   app.use('/auth', authRouter)
 
-  app.get('/', function(req, res) {
+  app.get('/auth/success', function(req, res) {
     res.send('')
   })
 
