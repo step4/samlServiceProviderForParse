@@ -50,16 +50,12 @@ router.post(`/login/callback`, async (req, res, next) => {
         httpOnly: false,
         secure: false
       })
-      res.redirect('/racmt4/auth/success')
+      res.redirect(`uniwebview://session-token?token=' + ${result}`)
     }
   } catch (error) {
     next(error)
     // res.redirect('/')
   }
-})
-
-router.get('/success', function(req, res) {
-  res.send('')
 })
 
 router.post(`/logout`, async (req, res) => {
