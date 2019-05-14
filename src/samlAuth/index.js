@@ -58,7 +58,7 @@ router.post(`/login/callback`, async (req, res, next) => {
   }
 })
 
-app.get('/success', function(req, res) {
+router.get('/success', function(req, res) {
   res.send('')
 })
 
